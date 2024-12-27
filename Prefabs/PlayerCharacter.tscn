@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://bbddtt50p3gd2"]
+
+[ext_resource type="Script" path="res://Prefabs/player_character.gd" id="1_irlua"]
+[ext_resource type="Texture2D" uid="uid://d1ckxcryp5v0n" path="res://Assets/test.jpg" id="2_wojfg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dt71p"]
+albedo_texture = ExtResource("2_wojfg")
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_o2gm8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1lrx2"]
+
+[node name="PlayerCharacter" type="CharacterBody3D"]
+script = ExtResource("1_irlua")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_dt71p")
+mesh = SubResource("CapsuleMesh_o2gm8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_1lrx2")
