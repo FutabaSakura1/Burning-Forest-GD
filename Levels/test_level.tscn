@@ -37,9 +37,6 @@ shape = SubResource("BoxShape3D_tdsbp")
 [node name="PlayerCharacter" parent="." instance=ExtResource("1_7b2yv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.02817, 2.02602, 0.410252)
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.18164, 6.5612)
-
 [node name="LightmapGI" type="LightmapGI" parent="."]
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
